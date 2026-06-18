@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: logoutput
+  name: logoutput
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: logoutput
+  strategy: {}
+  template:
+    metadata:
+      labels:
+        app: logoutput
+    spec:
+      containers:
+      - image: todo_app
+        imagePullPolicy: IfNotPresent
+        name: todo-app-fjhbz
+        resources: {}
+status: {}
