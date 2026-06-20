@@ -16,7 +16,7 @@ spec:
         app: logoutput
     spec:
       containers:
-      - image: log_output
+      - image: log_output:1.7
         imagePullPolicy: IfNotPresent
         name: log-output-q5gb9
         resources: {}
