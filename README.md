@@ -17,4 +17,5 @@
 
 - [1.5 The project, step 3](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.5/todo_app)
 - [1.6 The project, step 4](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.6/todo_app)
-- [1.6 External access with Ingress](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.7/log_output)
+- [1.7 External access with Ingress](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.7/log_output)
+- [1.8 The project, step 5](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.8/todo_app)
