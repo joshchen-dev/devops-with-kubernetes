@@ -13,3 +13,10 @@ spec:
             name: logoutput-service
             port:
               number: 1234
+      - path: /pingpong
+        pathType: Prefix
+        backend:
+          service:
+            name: pingpong-service
+            port: 
+              number: 1234
