@@ -22,3 +22,5 @@
 - [1.9 More services](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.9/pingpong)
 
 #### Introduction to Storage
+
+- [1.10 Even more services](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.10/log_output)
