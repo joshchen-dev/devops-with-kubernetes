@@ -15,9 +15,22 @@ spec:
       labels:
         app: logoutput
     spec:
+      volumes:
+        - name: random-string-output
+          emptyDir: {}
       containers:
-      - image: log_output:1.7
-        imagePullPolicy: IfNotPresent
-        name: log-output-q5gb9
-        resources: {}
+        - image: log_output/producer:2.1
+          imagePullPolicy: IfNotPresent
+          name: log-output-producer
+          volumeMounts:
+            - name: random-string-output
+              mountPath: /tmp
+          resources: {}
+        - image: log_output/consumer:2.1
+          imagePullPolicy: IfNotPresent
+          name: log-output-consumer
+          volumeMounts:
+            - name: random-string-output
+              mountPath: /tmp
+          resources: {}
 status: {}
