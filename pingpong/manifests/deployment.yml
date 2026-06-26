@@ -15,9 +15,16 @@ spec:
       labels:
         app: pingpong
     spec:
+      volumes:
+        - name: log-output-pingpong-share
+          persistentVolumeClaim:
+            claimName: share-claim
       containers:
-      - image: pingpong:1.9
+      - image: pingpong:1.11
         imagePullPolicy: IfNotPresent
         name: log-output-q5gb9
+        volumeMounts:
+          - name: log-output-pingpong-share
+            mountPath: /tmp
         resources: {}
 status: {}

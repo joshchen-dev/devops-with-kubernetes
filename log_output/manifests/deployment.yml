@@ -16,21 +16,22 @@ spec:
         app: logoutput
     spec:
       volumes:
-        - name: random-string-output
-          emptyDir: {}
+        - name: log-output-pingpong-share
+          persistentVolumeClaim:
+            claimName: share-claim
       containers:
-        - image: log_output/producer:2.1
+        - image: log_output/producer:1.11
           imagePullPolicy: IfNotPresent
           name: log-output-producer
           volumeMounts:
-            - name: random-string-output
+            - name: log-output-pingpong-share
               mountPath: /tmp
           resources: {}
-        - image: log_output/consumer:2.1
+        - image: log_output/consumer:1.11
           imagePullPolicy: IfNotPresent
           name: log-output-consumer
           volumeMounts:
-            - name: random-string-output
+            - name: log-output-pingpong-share
               mountPath: /tmp
           resources: {}
 status: {}

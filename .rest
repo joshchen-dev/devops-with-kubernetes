@@ -8,7 +8,7 @@ GET http://localhost:8081/now
 
 
 ###
-GET http://localhost:8081 HTTP/1.1
+GET http://localhost:8081
 
 ###
 GET http://localhost:8081/pingpong
