@@ -25,3 +25,4 @@
 
 - [1.10 Even more services](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.10/log_output)
 - [1.11 Persisting data](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.11)
+- [1.12 The project, step 6](https://github.com/joshchen-dev/devops-with-kubernetes/tree/1.12/todo_app)
