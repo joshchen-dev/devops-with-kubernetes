@@ -12,3 +12,6 @@ GET http://localhost:8081
 
 ###
 GET http://localhost:8081/pingpong
+
+###
+GET https://picsum.photos/1200 

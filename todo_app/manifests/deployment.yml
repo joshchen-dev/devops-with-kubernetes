@@ -15,12 +15,20 @@ spec:
       labels:
         app: todoapp
     spec:
+      volumes:
+        - name: todo-app-volume
+          persistentVolumeClaim:
+            claimName: share-claim
       containers:
-        - image: todo_app:1.5
+        - image: todo_app/frontend:1.12
           imagePullPolicy: IfNotPresent
-          name: todo-app-fjhbz
+          name: todo-app-frontend
           resources: {}
           env:
             - name: PORT
               value: "3000"
+        - image: todo_app/backend:1.12
+          imagePullPolicy: IfNotPresent
+          name: todo-app-backend
+          resources: {}
 status: {}
